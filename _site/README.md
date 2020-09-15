@@ -1,1 +1,0 @@
-# qodir.github.io
