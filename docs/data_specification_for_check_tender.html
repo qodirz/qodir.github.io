@@ -1,0 +1,99 @@
+---
+layout: document
+---
+
+<div class="blog-post">
+    <h3 class="blog-post-title">Data Specification for Check Tender</h3>
+    
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+        <th scope="col">Column</th>
+        <th scope="col">Required</th>
+        <th scope="col">Example</th>
+        <th scope="col">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Date</td>
+        <td>Yes</td>
+        <td>2020-01-01</td>
+        <td>Date of the transaction (ISO 8601 format yyyy-mm-dd).</td>
+        </tr>
+        <tr>
+        <td>Store ID</td>
+        <td>Yes</td>
+        <td>5812</td>
+        <td>Alphanumeric string that uniquely identifies a store.</td>
+        </tr>
+        <tr>
+        <td>Check ID</td>
+        <td>Yes</td>
+        <td>10001</td>
+        <td>Alphanumeric string that uniquely identifies a transaction within a store on a given day.</td>
+        </tr>
+        <tr>
+        <td>Date Time (UTC)</td>
+        <td>No</td>
+        <td>2017-12-14T21:05:00</td>
+        <td>Date and time of the transaction in UTC(ISO 8601 format yyyy-mm-ddThh:mm:ss)</td>
+        </tr>
+        <tr>
+        <td>Date_Time (Local)</td>
+        <td>Yes</td>
+        <td>2017-12-14T21:05:00</td>
+        <td>Date and time of the transaction in store's local timezone (ISO 8601 format yyyy-mm-ddThh:mm:ss)</td>
+        </tr>
+        <tr>
+        <td>Tender Type</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Integer that identifies the tender type used for the transaction. E.g. 1 (Cash), 2 (Credit Card), 3 (Gift Card)</td>
+        </tr>
+        <tr>
+        <td>Detailed Tender Type</td>
+        <td>No</td>
+        <td></td>
+        <td>See Tender Type Detail Dimension dimension for more details</td>
+        </tr>
+        <tr>
+        <td>Cardholder Name</td>
+        <td>Yes</td>
+        <td>JACKSON ROBERT</td>
+        <td>String representing the cardholder name from credit/debit card purchases. Please include name ordering (i.e. “First Middle Last” or “Last, First Middle”)</td>
+        </tr>
+        <tr>
+        <td>CC Last Four, Last 4, or CC Token</td>
+        <td>Yes</td>
+        <td>123456XXXXXX8466</td>
+        <td>String representing the obfuscated last 4 digits from credit/debit card purchases.</td>
+        </tr>
+        <tr>
+        <td>Tender Amount</td>
+        <td>Yes</td>
+        <td>24.19</td>
+        <td>Post discount and post tax tendered amount</td>
+        </tr>
+        <tr>
+        <td>Tip Amount</td>
+        <td>Yes</td>
+        <td>2</td>
+        <td>Tip amount for the tender</td>
+        </tr>
+        <tr>
+        <td>Loyalty ID</td>
+        <td>No</td>
+        <td>Loy1234</td>
+        <td>Alphanumeric String representing loyalty membership Id of a customer</td>
+        </tr>
+        <tr>
+        <td>Customer ID</td>
+        <td>No</td>
+        <td>Cust1234</td>
+        <td>Alphanumeric String representing customer Id of a customer</td>
+        </tr>
+        </tbody>
+        </table>
+</div>
+  

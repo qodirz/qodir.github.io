@@ -1,0 +1,6 @@
+- name: Documents
+  link: /documents
+- name: Updates
+  link: /updates
+- name: Contact
+  link: /contact

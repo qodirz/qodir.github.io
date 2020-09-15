@@ -1,0 +1,38 @@
+---
+layout: document
+---
+
+<div class="blog-post">
+  <h2 class="blog-post-title">Data Format</h2>        
+  <p>We are expecting the incoming files to be in standart utf-8 encoded CSV format. in following sections we have provided information about the required data fields and their format that Bridg typically ingests from a client's data warehouse or a third party system. we'll use this document to:</p>        
+  
+  <ul>
+    <li>Gain a better understanding of what type of data you should be sending to Bridg.</li>
+    <li>Identify data gaps or potential augmentation opportunities in existing data sources.</li>
+    <li>Develop a schema to transfer data to Bridg.</li>
+  </ul>
+  
+  <p>At a high level, the daily data should include:</p>        
+
+  <ul>
+    <li>Check Summary</li>
+    <li>Tender</li>
+    <li>Line item</li>
+    <li>Discount</li>
+    <li>Comp</li>
+    <li>Location</li>
+    <li>Customer</li>
+    <li>Dimension files</li>
+    <ul>
+      <li>Tender Type dimension</li>
+      <li>Tender Type detail dimension</li>
+      <li>Order Source dimension</li>
+      <li>Discount dimension</li>
+      <li>Comp dimension</li>
+      <li>Category dimension</li>        
+    </ul>
+  </ul>
+
+  <p class="font-weight-bolder">Please Confirm which fields you have available and will be sending. if a field won't be available or sent, Bridg needs to agree and confirm that we can proceed without it.</p>
+  
+</div>

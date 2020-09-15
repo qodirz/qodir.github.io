@@ -1,0 +1,93 @@
+---
+layout: document
+---
+
+<div class="blog-post">
+    <h3 class="blog-post-title">Data Specification for Check Summary</h3>
+  
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Column</th>
+            <th scope="col">Required</th>
+            <th scope="col">Example</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Date</td>
+            <td>Yes</td>
+            <td>2020-01-10</td>
+            <td>Date of the transaction (ISO 8601 format yyyy-mm-dd)</td>
+          </tr>
+          <tr>
+            <td>Store ID</td>
+            <td>Yes</td>
+            <td>5812</td>
+            <td>Alphanumeric string that uniquely identifies as store</td>
+          </tr>
+          <tr>
+            <td>Check ID</td>
+            <td>Yes</td>
+            <td>10001</td>
+            <td>Alphanumeric string that uniquely identifies as transaction within a store on a given day.</td>            
+          </tr>
+          <tr>
+            <td>Date time (UTC)</td>
+            <td>No</td>
+            <td>2017-12-14T21:05:00</td>
+            <td>Date and time of the transaction in UTC (ISO 8601 format yyyy-mm-ddThh:mm:ss)</td>
+          </tr>
+          <tr>
+            <td>Date_Time (Local)</td>
+            <td>Yes</td>
+            <td>2017-12-14T21:05:00</td>
+            <td>Date and time of the transaction in store's local timezone (ISO 8601 format yyyy-mm-ddThh:mm:ss)</td>
+          </tr>
+          <tr>
+            <td>Tender Amount</td>
+            <td>Yes</td>
+            <td>24.19</td>
+            <td>Post discount and post tax tendered amount</td>
+          </tr>
+          <tr>
+            <td>Tax Amount</td>
+            <td>Yes</td>
+            <td>4.19</td>
+            <td>Amount of tax charged for the transaction</td>
+          </tr>
+          <tr>
+            <td>Discount</td>
+            <td>Yes</td>
+            <td>2.5</td>
+            <td>Amount of discount applied for the specific transaction. Discount should be the sum of all comps, discounts, and promos applied to check</td>
+          </tr>
+          <tr>
+            <td>Pre-tax</td>
+            <td>No</td>
+            <td>25.69</td>
+            <td>Pre-discount and pre-tax amount</td>
+          </tr>
+          <tr>
+            <td>Party Size</td>
+            <td>No</td>
+            <td>24.19</td>
+            <td>Number of people dining</td>
+          </tr>
+          <tr>
+            <td>Order Source</td>
+            <td>Yes</td>
+            <td>2</td>
+            <td>Integer representing where the transaction was initiated (i.e, 1, 2, 3, 64, 89)</td>
+          </tr>
+          <tr>
+            <td>Currency</td>
+            <td>No</td>
+            <td>USD</td>
+            <td>Default to USD</td>
+          </tr>
+        </tbody>
+      </table>      
+</div>
+  

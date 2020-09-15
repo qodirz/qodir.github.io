@@ -1,0 +1,69 @@
+---
+layout: document
+---
+
+<div class="blog-post">
+    <h3 class="blog-post-title">Data Specification for Discount</h3>        
+    
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+        <th>Column</th>
+        <th>Required</th>
+        <th>Example</th>
+        <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Date</td>
+        <td>Yes</td>
+        <td>2020-01-01</td>
+        <td>Date of the transaction (ISO 8601 format yyyy-mm-dd).</td>
+        </tr>
+        <tr>
+        <td>Store ID</td>
+        <td>Yes</td>
+        <td>5812</td>
+        <td>Alphanumeric string that uniquely identifies a store.</td>
+        </tr>
+        <tr>
+        <td>Check ID</td>
+        <td>Yes</td>
+        <td>10001</td>
+        <td>Alphanumeric string that uniquely identifies a transaction within a store on a given day.</td>
+        </tr>
+        <tr>
+        <td>Date Time (UTC)</td>
+        <td>No</td>
+        <td>2017-12-14T21:05:00</td>
+        <td>Date and time of the transaction in UTC(ISO 8601 format yyyy-mm-ddThh:mm:ss)</td>
+        </tr>
+        <tr>
+        <td>Date_Time (Local)</td>
+        <td>Yes</td>
+        <td>2017-12-14T21:05:00</td>
+        <td>Date and time of the transaction in store's local timezone (ISO 8601 format yyyy-mm-ddThh:mm:ss)</td>
+        </tr>
+        <tr>
+        <td>Discount ID</td>
+        <td>Yes</td>
+        <td>371</td>
+        <td>Integer representing the discount</td>
+        </tr>
+        <tr>
+        <td>Discount Amount</td>
+        <td>Yes</td>
+        <td>2.5</td>
+        <td>Amount of discount applied for the specific discount_code</td>
+        </tr>
+        <tr>
+        <td>Discount Code</td>
+        <td>No</td>
+        <td>AQNZ2</td>
+        <td>Alphanumeric string representing the specific discount code a customer redeemed</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+  

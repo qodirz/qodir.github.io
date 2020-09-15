@@ -1,0 +1,123 @@
+---
+layout: document
+---
+
+<div class="blog-post">
+    <h3 class="blog-post-title">Data Specification for Line Item</h3>
+    
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+        <th>Column</th>
+        <th>Required</th>
+        <th>Example</th>
+        <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Date</td>
+        <td>Yes</td>
+        <td>2020-01-01</td>
+        <td>Date of the transaction (ISO 8601 format yyyy-mm-dd).</td>
+        </tr>
+        <tr>
+        <td>Store ID</td>
+        <td>Yes</td>
+        <td>5812</td>
+        <td>Alphanumeric string that uniquely identifies a store.</td>
+        </tr>
+        <tr>
+        <td>Check ID</td>
+        <td>Yes</td>
+        <td>10001</td>
+        <td>Alphanumeric string that uniquely identifies a transaction within a store on a given day.</td>
+        </tr>
+        <tr>
+        <td>Date Time (UTC)</td>
+        <td>No</td>
+        <td>2017-12-14T21:05:00</td>
+        <td>Date and time of the transaction in UTC(ISO 8601 format yyyy-mm-ddThh:mm:ss)</td>
+        </tr>
+        <tr>
+        <td>Date_Time (Local)</td>
+        <td>Yes</td>
+        <td>2017-12-14T21:05:00</td>
+        <td>Date and time of the transaction in store's local timezone (ISO 8601 format yyyy-mm-ddThh:mm:ss)</td>
+        </tr>
+        <tr>
+        <td>Item ID</td>
+        <td>Yes</td>
+        <td>24</td>
+        <td>Integer representing the code used by the POS to reference the item</td>
+        </tr>
+        <tr>
+        <td>Item Name</td>
+        <td>Yes</td>
+        <td>S Burrito</td>
+        <td>String representing name of item in reporting and on UI</td>
+        </tr>
+        <tr>
+        <td>Description</td>
+        <td>No</td>
+        <td>Steak Burrito</td>
+        <td>String representing long name of item</td>
+        </tr>
+        <tr>
+        <td>Category ID</td>
+        <td>Yes</td>
+        <td>3</td>
+        <td>Integer representing category ID of the item</td>
+        </tr>
+        <tr>
+        <td>Category Name</td>
+        <td>Yes</td>
+        <td>Burritos</td>
+        <td>String representing name of category</td>
+        </tr>
+        <tr>
+        <td>Category Description</td>
+        <td>No</td>
+        <td>All kinds of burritos</td>
+        <td>String representing description of category</td>
+        </tr>
+        <tr>
+        <td>Item Count</td>
+        <td>Yes</td>
+        <td>2</td>
+        <td>Integer representing the number of identical items purchased in the current transaction</td>
+        </tr>
+        <tr>
+        <td>Item Amount</td>
+        <td>Yes</td>
+        <td>6.5</td>
+        <td>Amount of single item</td>
+        </tr>
+        <tr>
+        <td>Item Tax</td>
+        <td>No</td>
+        <td>3</td>
+        <td>Amount of tax of item</td>
+        </tr>
+        <tr>
+        <td>Item Total</td>
+        <td>Yes</td>
+        <td>13</td>
+        <td>Amount of all identical items purchased in the transaction</td>
+        </tr>
+        <tr>
+        <td>Item Type</td>
+        <td>Yes</td>
+        <td>Sale</td>
+        <td>String representing item type (i.e. Sale, Refund, Revenue Item). If it's a refund, item amount has to be negative</td>
+        </tr>
+        <tr>
+        <td>Parent ID</td>
+        <td>Yes</td>
+        <td>NULL</td>
+        <td>If the item is a combo, one row should represent the combo and individual items should have item ID of the combo as their parent ID</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+  
