@@ -19,8 +19,7 @@
     </head>
     <body>
     
-      <header class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" style="background: rgb(21,96,229);
-      background: linear-gradient(90deg, rgba(21,96,229,1) 0%, rgba(3,48,128,1) 100%);">
+      <header class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top bg-header">
         <div class="container d-flex justify-content-between">
           <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
             <img src="/assets/images/logo.png" width="77" class="img-fluid float-md-right" alt="Responsive image">
@@ -42,11 +41,11 @@
       
       </header>
     
-      <div class="container mt-5">
-
-          {{ content }}
-                
+      <div class="container mt-5" style="min-height: 610px;">
+        {{ content }}
       </div>
+
+      {% include footer.html %}
   
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js"></script>

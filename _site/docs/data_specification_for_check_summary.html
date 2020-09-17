@@ -29,14 +29,15 @@
       <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet">
       <!-- Documentation extras -->
 
-      <link rel="stylesheet" href="/assets/css/main.css">
       <link href="https://getbootstrap.com/docs/4.5/assets/css/docs.min.css" rel="stylesheet">  
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">  
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/assets/css/main.css">
+      
     </head>
     <body>
     
-      <header class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" style="background: rgb(21,96,229);
-      background: linear-gradient(90deg, rgba(21,96,229,1) 0%, rgba(3,48,128,1) 100%);">
+      <header class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top bg-header" >
         <div class="container d-flex justify-content-between">
           <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
             <img src="/assets/images/logo.png" width="77" class="img-fluid float-md-right" alt="Responsive image">
@@ -62,88 +63,50 @@
       
       </header>
     
-      <div class="container mt-5">
+      <div class="container mt-5" style="min-height: 610px;">
 
         <div class="row flex-xl-nowrap">
-          <div class="col-md-3 col-xl-3 bd-sidebar">
-            <!-- <form role="search" class="bd-search d-flex align-items-center"> -->
-              <!-- <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off" data-docs-version="4.5">
-              <button class="btn btn-outline-secondary border-left-0 border" type="button">
-                <i class="fa fa-search"></i>
-              </button> -->                      
-            <!-- </form> -->
-            <button class="btn bd-search-docs-toggle d-md-none" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg></button>
-            <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Main navigation"><div class="bd-toc-item active">
-              
-              <p class="lead font-weight-bold">List of Contents for Quick Reference</p>
-        
-              <ul id="nav-doc" >
-                  <li class="active bd-sidenav-active"><a href="/docs/data_format">Data Format</a></li>
-                  <li><a href="/docs/data_daily_transfer">Daily Data Transfer</a></li>
-                  <li><a href="/docs/catchup_data">Catchup Data</a></li>
-                  <li><a href="/docs/historical_data">Historical Data</a></li>
-                  <li><a href="/docs/data_qa_and_validation">Data QA And Validation</a></li>
-                  <li><a href="/docs/files_and_naming_convention">Files and naming convention</a></li>
-                  
-                  <ul>
-                      <li><a href="/docs/check_summary">Check Summary</a></li>
-                      <ul>
-                        <li><a href="/docs/data_specification_for_check_summary">Data Specification for Check Summary</a></li>
-                      </ul>
-                      <li><a href="/docs/tender">Tender</a></li>
-                      <ul>
-                        <li><a href="/docs/data_specification_for_check_tender">Data Specification for Check Tender</a></li>
-                      </ul>
-                      <li><a href="/docs/line_item">Line Item</a></li>
-                      <ul>
-                        <li><a href="/docs/data_specification_for_line_item">Data Specification for Line Item</a></li>
-                      </ul>
-                      <li><a href="/docs/discount">Discount</a></li>
-                      <ul>
-                        <li><a href="/docs/data_specification_for_discount">Data Specification for Discount</a></li>
-                      </ul>
-                      <li><a href="/docs/comp">Comp</a></li>
-                      <ul>
-                        <li><a href="/docs/data_specification_for_comp">Data Specification for Comp</a></li>
-                      </ul>
-                      <li><a href="/docs/tender_type_dimension">Tender Type Dimension</a></li>
-                      <ul>
-                        <li><a href="/docs/data_specification_for_tender_type_dimension">Data Specification for Tender Type Dimension</a></li>
-                      </ul>
-                      <li><a href="/docs/tender_type_detail_dimension">Tender Type Detail Dimension</a></li>
-                      <ul>
-                        <li><a href="/docs/data_specification_for_tender_type_detail_dimension">Data Specification for Tender Type Detail Dimension</a></li>
-                      </ul>
-                      <li><a href="/docs/order_source_dimension">Order Source Dimension</a></li>
-                      <ul>
-                        <li><a href="/docs/data_specification_for_order_source_dimension">Data Specification for Order Source Dimension</a></li>
-                      </ul>
-                      <li><a href="/docs/discount_dimension">Discount Dimension</a></li>
-                      <ul>
-                        <li><a href="/docs/data_specification_for_discount_dimension">Data Specification for Discount Dimension</a></li>
-                      </ul>
-                      <li><a href="/docs/comp_dimension">Comp Dimension</a></li>
-                      <ul>
-                        <li><a href="/docs/data_specification_for_comp_dimension">Data Specification for Comp Dimension</a></li>
-                      </ul>
-                      <li><a href="/docs/location">Location</a></li>
-                      <ul>
-                        <li><a href="/docs/data_specification_for_comp_location">Data Specification for Location</a></li>
-                      </ul>
-                      <li><a href="/docs/customer">Customer</a></li>
-                      <ul>
-                        <li><a href="/docs/data_specification_for_comp_customer">Data Specification for Customer</a></li>
-                      </ul>                      
-                  </ul>
+          <div class="col-md-4 col-xl-4">
 
-                <li><a href="/docs/customizations_and_change_requests">Customizations and Change Requests</a></li>                
-              </ul>
-              
-        
-            </nav>  
+              <div id="accordion" class="accordion mb-2">
+                
+                  <div class="card mb-0">
+                      <p class="lead m-0 pl-3 p-2" style="background: #f7f7f7;">Topics</p>
+                      
+                      <div class="card-header collapsed" data-toggle="collapse" href="#welcome_to_bridg">                      
+                        <a class="card-title"> 
+                          <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                          Welcome to Bridg </a>
+                      </div>
+                      <div id="welcome_to_bridg" class="card-body collapse" data-parent="#accordion">
+                        <a href="/documents" class="btn btn-link ml-4"> Getting Started </a><br/>
+                        <a href="/" class="btn btn-link ml-4"> Creating An Account </a>
+                      </div>
+
+                      <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#ultricies">
+                          <a class="card-title">
+                            <i class="fa fa-floppy-o" aria-hidden="true"></i> 
+                            Ultricies Pellentesque Fringilla </a>
+                      </div>
+                      <div id="ultricies" class="card-body collapse" data-parent="#accordion">
+                        <a href="/" class="btn btn-link ml-4"> ultricies1 </a><br/>
+                        <a href="/" class="btn btn-link ml-4"> ultricies2 </a>
+                      </div>
+
+                      <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#ridiculus">
+                          <a class="card-title">
+                            <i class="fa fa-floppy-o" aria-hidden="true"></i> 
+                            Ridiculus Aenean </a>
+                      </div>
+                      <div id="ridiculus" class="card-body collapse" data-parent="#accordion">
+                        <a href="/" class="btn btn-link ml-4"> ridiculus1 </a><br/>
+                        <a href="/" class="btn btn-link ml-4"> ridiculus2 </a>
+                      </div>
+                  </div>
+              </div>
           </div>
           
-          <main class="col-md-9 col-xl-9 py-md-3 pl-md-5 bd-content" role="main">
+          <main class="col-md-8 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
             
             <div class="blog-post">
     <h3 class="blog-post-title">Data Specification for Check Summary</h3>
@@ -237,9 +200,71 @@
         
           </main>
         </div>
-                
+      
       </div>
-  
+
+      <div class="container-fluid" style="background: linear-gradient(92.83deg, #091D42 0%, #071631 100%);">
+    <div class="container justify-content-between">
+        <!-- Footer -->
+        <footer class="page-footer font-small pt-3">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="footer-title">Products</h5>
+                <ul class="list-unstyled">
+                <li><a class="footer-link" href="#!">CRM</a></li>
+                <li><a class="footer-link" href="#!">Campaign Audiences</a></li>
+                <li><a class="footer-link" href="#!">Email</a></li>
+                <li><a class="footer-link" href="#!">Mobile & Loyalty</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="footer-title">Services</h5>
+                <ul class="list-unstyled">
+                <li><a class="footer-link" href="#!">CRM</a></li>
+                <li><a class="footer-link" href="#!">Campaign Audiences</a></li>
+                <li><a class="footer-link" href="#!">Email</a></li>
+                <li><a class="footer-link" href="#!">Mobile & Loyalty</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="footer-title">Our Technology</h5>
+                <ul class="list-unstyled">
+                <li><a class="footer-link" href="#!">CRM</a></li>
+                <li><a class="footer-link" href="#!">Campaign Audiences</a></li>
+                <li><a class="footer-link" href="#!">Email</a></li>
+                <li><a class="footer-link" href="#!">Mobile & Loyalty</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="footer-title">Company</h5>
+                <ul class="list-unstyled">
+                <li><a class="footer-link" href="#!">CRM</a></li>
+                <li><a class="footer-link" href="#!">Campaign Audiences</a></li>
+                <li><a class="footer-link" href="#!">Email</a></li>
+                <li><a class="footer-link" href="#!">Mobile & Loyalty</a></li>
+                </ul>
+            </div>
+
+            </div>
+
+            <div class="footer-copyright footer-text pb-5">
+            2020 Bridg Inc. All rights Reserved — Privacy
+            </div>
+        </div>
+        <!-- Footer Links -->
+
+        </footer>
+        <!-- Footer -->
+    </div>
+</div>
+      
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js"></script>
 

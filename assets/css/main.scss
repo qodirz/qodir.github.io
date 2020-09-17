@@ -1,3 +1,90 @@
 ---
 ---
 @import 'bootstrap/bootstrap';
+
+@font-face {
+    font-family: ProximaBold;
+    src: url("/assets/fonts/Proxima Nova Alt Bold.otf");
+}  
+
+@font-face {
+    font-family: Proxima;
+    src: url("/assets/fonts/ProximaNova-Regular.otf");
+}  
+
+body{
+    font-family: Proxima;
+    font-style: normal;
+    font-weight: normal;
+    color: #041D45;
+}
+
+.bg-header{
+    background: linear-gradient(91.39deg, #105EEB 0%, #133579 100%);
+}
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f078";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f054"; 
+}
+
+.fa-floppy-o {
+    color: #105EEB;
+}
+
+.accordion>.card {
+    border: 1px solid #B2C1DE;
+}
+
+.card-body{
+    background-color: #f7f7f7 !important;
+    padding: 2px;    
+}
+
+.btn-link:hover{
+    color: #105EEB !important;
+}
+
+.footer-title{
+    font-family: Proxima;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+}
+
+.footer-link{
+    font-family: Proxima;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #B2C1DE;
+}
+
+.footer-link:hover{
+    color: #B2C1DE;
+}
+
+.footer-text{
+    font-family: Proxima;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B2C1DE;
+}
+
+
+:target:before {
+    content:"";
+    display:block;
+    height:90px; /* fixed header height*/
+    margin:-90px 0 0; /* negative fixed header height */
+}
