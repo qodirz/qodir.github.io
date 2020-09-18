@@ -49,18 +49,24 @@
           <div class="col-md-4 col-xl-4">
 
               <div id="accordion" class="accordion mb-2">
-                
+                {% if page.url == '/documents.html' %}
+                  {%  assign welcomeClass = 'active' %}
+                {% elsif page.url == '/getting_started.html' %}
+                  {%  assign getting_started = 'active' %}
+                {% elsif page.url == '/create_account.html' %}
+                  {%  assign create_account = 'active' %}
+                {% endif %}
                   <div class="card mb-0">
                       <p class="lead m-0 pl-3 p-2" style="background: #f7f7f7;">Topics</p>
                       
-                      <div class="card-header collapsed" data-toggle="collapse" href="#welcome_to_bridg">                      
-                        <a class="card-title"> 
+                      <div class="card-header" data-toggle="collapse" href="#welcome_to_bridg">                      
+                        <a class="card-title {{welcomeClass}}"> 
                           <i class="fa fa-floppy-o" aria-hidden="true"></i>
                           Welcome to Bridg </a>
                       </div>
-                      <div id="welcome_to_bridg" class="card-body collapse" data-parent="#accordion">
-                        <a href="/documents" class="btn btn-link ml-4"> Getting Started </a><br/>
-                        <a href="/" class="btn btn-link ml-4"> Creating An Account </a>
+                      <div id="welcome_to_bridg" class="card-body collapse show" data-parent="#accordion">
+                        <a href="/getting_started" class="btn btn-link ml-4 {{getting_started}}"> Getting Started </a><br/>
+                        <a href="/create_account" class="btn btn-link ml-4 {{create_account}}"> Creating An Account </a>
                       </div>
 
                       <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#ultricies">
@@ -86,7 +92,7 @@
               </div>
           </div>
           
-          <main class="col-md-8 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          <main class="col-md-8 col-xl-8 pl-md-5 bd-content" role="main">
             
             {{ content }}
         

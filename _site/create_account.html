@@ -9,15 +9,15 @@
 <meta property="og:title" content="jeki" />
 <meta name="author" content="name" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/docs/data_specification_for_discount.html" />
-<meta property="og:url" content="http://localhost:4000/docs/data_specification_for_discount.html" />
+<link rel="canonical" href="http://localhost:4000/create_account.html" />
+<meta property="og:url" content="http://localhost:4000/create_account.html" />
 <meta property="og:site_name" content="jeki" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="jeki" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@name" />
 <script type="application/ld+json">
-{"@type":"WebPage","author":{"@type":"Person","name":"name"},"headline":"jeki","url":"http://localhost:4000/docs/data_specification_for_discount.html","@context":"https://schema.org"}</script>
+{"@type":"WebPage","author":{"@type":"Person","name":"name"},"headline":"jeki","url":"http://localhost:4000/create_account.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
       
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -80,7 +80,7 @@
                       </div>
                       <div id="welcome_to_bridg" class="card-body collapse show" data-parent="#accordion">
                         <a href="/getting_started" class="btn btn-link ml-4 "> Getting Started </a><br/>
-                        <a href="/create_account" class="btn btn-link ml-4 "> Creating An Account </a>
+                        <a href="/create_account" class="btn btn-link ml-4 active"> Creating An Account </a>
                       </div>
 
                       <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#ultricies">
@@ -108,71 +108,60 @@
           
           <main class="col-md-8 col-xl-8 pl-md-5 bd-content" role="main">
             
-            <div class="blog-post">
-    <h3 class="blog-post-title">Data Specification for Discount</h3>        
-    
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-        <th>Column</th>
-        <th>Required</th>
-        <th>Example</th>
-        <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td>Date</td>
-        <td>Yes</td>
-        <td>2020-01-01</td>
-        <td>Date of the transaction (ISO 8601 format yyyy-mm-dd).</td>
-        </tr>
-        <tr>
-        <td>Store ID</td>
-        <td>Yes</td>
-        <td>5812</td>
-        <td>Alphanumeric string that uniquely identifies a store.</td>
-        </tr>
-        <tr>
-        <td>Check ID</td>
-        <td>Yes</td>
-        <td>10001</td>
-        <td>Alphanumeric string that uniquely identifies a transaction within a store on a given day.</td>
-        </tr>
-        <tr>
-        <td>Date Time (UTC)</td>
-        <td>No</td>
-        <td>2017-12-14T21:05:00</td>
-        <td>Date and time of the transaction in UTC(ISO 8601 format yyyy-mm-ddThh:mm:ss)</td>
-        </tr>
-        <tr>
-        <td>Date_Time (Local)</td>
-        <td>Yes</td>
-        <td>2017-12-14T21:05:00</td>
-        <td>Date and time of the transaction in store's local timezone (ISO 8601 format yyyy-mm-ddThh:mm:ss)</td>
-        </tr>
-        <tr>
-        <td>Discount ID</td>
-        <td>Yes</td>
-        <td>371</td>
-        <td>Integer representing the discount</td>
-        </tr>
-        <tr>
-        <td>Discount Amount</td>
-        <td>Yes</td>
-        <td>2.5</td>
-        <td>Amount of discount applied for the specific discount_code</td>
-        </tr>
-        <tr>
-        <td>Discount Code</td>
-        <td>No</td>
-        <td>AQNZ2</td>
-        <td>Alphanumeric string representing the specific discount code a customer redeemed</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
+            <div class="blog-post">  
   
+  <h4 class="text-blue">Creating An Account</h4>
+
+  <div class="row">
+    <div class="col-md-3">
+      <ul>
+        <li>Mattis Dolor</li>
+        <li>Magna Condimentum</li>
+        <li>Inceptos Venenatis</li>
+        <li>Fringilla Venenatis</li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <ul>
+        <li>Nibh Vehicula</li>
+        <li>Tellus Mollis Dolor Sollicitudin</li>
+        <li>Egestas Quam Condimentum</li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <ul>
+        <li>Nibh Vehicula</li>
+        <li>Tellus Mollis Dolor Sollicitudin</li>
+        <li>Egestas Quam Condimentum</li>
+        <ul class="box-type">
+          <li>Egestas Quam Condimentum</li>
+          <li>Egestas Quam Condimentum</li>
+          <ul class="latin-type">
+            <li>Fringilla Venenatis</li>
+            <li>Fringilla Venenatis</li>
+            <li>Fringilla Venenatis</li>
+          </ul>  
+        </ul>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <ol>
+        <li>Fringilla Venenatis</li>
+        <li>Fringilla Venenatis</li>
+        <ul type="a">
+          <li>Egestas Quam Condimentum</li>
+        </ul>
+        <li>Fringilla Venenatis</li>
+      </ol>
+
+    </div>
+  </div>
+
+</div>
+
         
           </main>
         </div>

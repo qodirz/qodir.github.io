@@ -30,15 +30,26 @@ body{
 }
 .accordion .card-header.collapsed:after {
     /* symbol for "collapsed" panels */
-    content: "\f054"; 
+    content: "\f054";     
 }
 
 .fa-floppy-o {
+    // color: #105EEB;
     color: #105EEB;
 }
 
+uli li.text-blue, .text-blue{color: #105EEB;}
+
 .accordion>.card {
     border: 1px solid #B2C1DE;
+}
+
+.card-title{
+    color: #041D45;
+}
+
+.card-header.collapsed .fa-floppy-o{
+    color: #B2C1DE;
 }
 
 .card-body{
@@ -81,10 +92,21 @@ body{
     color: #B2C1DE;
 }
 
-
 :target:before {
     content:"";
     display:block;
     height:90px; /* fixed header height*/
     margin:-90px 0 0; /* negative fixed header height */
+}
+
+.btn.btn-link.active, .card-title.active {
+    color: #105EEB !important;
+}
+
+ul.box-type li {
+    list-style-type: square;
+}
+
+ul.latin-type li {
+    list-style-type: lower-latin !important;
 }
