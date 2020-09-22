@@ -8,7 +8,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-title: "jeki" # the name of your site, e.g. ACME Corp.
+title: "Bridg Doc" # the name of your site, e.g. ACME Corp.
 tagline: "An awesome tagline"
 email: "your.email@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
