@@ -110,3 +110,52 @@ ul.box-type li {
 ul.latin-type li {
     list-style-type: lower-latin !important;
 }
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: $spacer;
+    background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+  
+    th,
+    td {
+      padding: $table-cell-padding;
+      vertical-align: top;
+      border-top: $table-border-width solid $table-border-color;
+    }
+  
+    thead th {
+      vertical-align: bottom;
+      border-bottom: (2 * $table-border-width) solid $table-border-color;
+    }
+  
+    tbody + tbody {
+      border-top: (2 * $table-border-width) solid $table-border-color;
+    }
+  
+    table {
+      background-color: $body-bg;
+    }
+}
+
+table {
+    tbody tr:nth-of-type(odd) {
+      background-color: rgba(#000, .05);
+    }
+}
+
+table {
+    border: $table-border-width solid $table-border-color;
+  
+    th,
+    td {
+      border: $table-border-width solid $table-border-color;
+    }
+  
+    thead {
+      th,
+      td {
+        border-bottom-width: (2 * $table-border-width);
+      }
+    }
+  }
