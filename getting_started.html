@@ -7,5 +7,6 @@ layout: document
 </ol>
 
 <div class="blog-post">
-  {% include_relative bridg_datafeed_manual.md %}
+  {% capture p1 %}{% include_relative bridg_datafeed_manual.md %}{% endcapture %}
+  {{ p1 | markdownify }}
 </div>
