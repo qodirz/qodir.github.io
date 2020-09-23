@@ -5,7 +5,6 @@ sass:
 
 plugins:
   - jekyll-autoprefixer
-  - jekyll-seo-tag
   - jekyll-sitemap
 
 title: "Bridg Doc" # the name of your site, e.g. ACME Corp.
