@@ -2071,7 +2071,7 @@ body { font-family: Proxima; font-style: normal; font-weight: normal; color: #04
 
 .bg-header { background: linear-gradient(91.39deg, #105EEB 0%, #133579 100%); }
 
-.accordion .card-header:after { font-family: 'FontAwesome'; content: "\f078"; float: right; }
+.accordion .card-header.menu:after { font-family: 'FontAwesome'; content: "\f078"; float: right; }
 
 .accordion .card-header.collapsed:after { /* symbol for "collapsed" panels */ content: "\f054"; }
 
@@ -2105,7 +2105,7 @@ ul.box-type li { list-style-type: square; }
 
 ul.latin-type li { list-style-type: lower-latin !important; }
 
-table { width: 100%; max-width: 100%; margin-bottom: 1rem; background-color: transparent; }
+table { display: block; overflow-x: auto; width: 100%; max-width: 100%; margin-bottom: 1rem; background-color: transparent; }
 
 table th, table td { padding: 0.75rem; vertical-align: top; border-top: 1px solid #dee2e6; }
 

@@ -1,0 +1,109 @@
+<!doctype html>
+  <html lang="{{ site.lang | default: 'en-US' }}">
+    <head>
+      <meta charset="utf-8">
+      <title>Bridg cdp docs</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+      <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" type="image/x-icon">
+      
+      <!-- Bootstrap core CSS -->
+      <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Documentation extras -->
+
+      <link href="https://getbootstrap.com/docs/4.5/assets/css/docs.min.css" rel="stylesheet">  
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/assets/css/main.css">
+      
+    </head>
+    <body>
+    
+      <header class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top bg-header" >
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+            <img src="/assets/images/logo.png" width="77" class="img-fluid float-md-right" alt="Responsive image">
+          </a>
+       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">              
+              {% for item in site.data.navbar %}
+                <a class="nav-item nav-link font-weight-bold text-white" href="{{item.link}}">{{ item.name }}</a>
+              {% endfor %}  
+            </div>
+          </div>
+              
+        </div>
+      
+      </header>
+    
+      <div class="container mt-5" style="min-height: 610px;">
+
+        <div class="row flex-xl-nowrap">
+          <div class="col-md-4 col-xl-4">
+
+              <div id="accordion" class="accordion mb-2">
+                  <div class="card mb-0">
+                      <p class="lead m-0 pl-3 p-2" style="background: #f7f7f7;">Topics</p>
+                      
+                      <div class="card-header">
+                        <a href="#overview-of-file-structure" class="card-title"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Overview of File Structure </a>
+                      </div>
+                      <div class="card-header">               
+                        <a href="#required-data-format" class="card-title"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Required Data Format </a>
+                      </div>
+                      <div class="card-header">                      
+                        <a href="#daily-data-transfer--cadence" class="card-title"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Daily Data Transfer &amp; Cadence </a>
+                      </div>
+                      <div class="card-header">                      
+                        <a href="#catchup-data" class="card-title"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Catchup Data </a>
+                      </div>
+                      <div class="card-header">                      
+                        <a href="#historical-data" class="card-title"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Historical Data </a>
+                      </div>
+                      <div class="card-header">                      
+                        <a href="#data-qa-and-validation" class="card-title"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Data QA and Validation </a>
+                      </div>
+                      <div class="card-header">                      
+                        <a href="#customizations-and-change-requests" class="card-title"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Customizations and Change Requests: </a>
+                      </div>
+                      <div class="card-header menu collapsed" data-toggle="collapse" data-parent="#accordion" href="#file_details">
+                        <a class="card-title"><i class="fa fa-floppy-o" aria-hidden="true"></i> File Details: Data Formats and Naming Conventions </a>
+                      </div>
+                      <div id="file_details" class="card-body collapse" data-parent="#accordion">
+                        <a href="#1-transaction-summary-file" class="btn btn-link ml-4">Transaction Summary</a><br/>
+                        <a href="#2-tender-file" class="btn btn-link ml-4">Tender</a><br/>
+                        <a href="#3-line-item-file" class="btn btn-link ml-4">Line Item</a><br/>
+                        <a href="#4-discount-summary-file" class="btn btn-link ml-4">Discount Summary</a><br/>
+                        <a href="#5-customers-file" class="btn btn-link ml-4">Customers</a><br/>
+                        <a href="#6-product-dimension-file" class="btn btn-link ml-4">Product dimension</a><br/>
+                        <a href="#7-discount-detail-dimension-file" class="btn btn-link ml-4">Discount Detail dimension</a><br/>
+                        <a href="#8-location-dimension-file" class="btn btn-link ml-4">Location dimension</a><br/>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+          
+          <main class="col-md-8 col-xl-8 pl-md-5 bd-content" role="main">
+            
+            {{ content }}
+        
+          </main>
+        </div>
+      
+      </div>
+
+      {% include footer.html %}
+      
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+  </html>
+  

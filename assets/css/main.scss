@@ -23,7 +23,7 @@ body{
     background: linear-gradient(91.39deg, #105EEB 0%, #133579 100%);
 }
 
-.accordion .card-header:after {
+.accordion .card-header.menu:after {
     font-family: 'FontAwesome';  
     content: "\f078";
     float: right; 
@@ -112,6 +112,8 @@ ul.latin-type li {
 }
 
 table {
+    display: block;
+    overflow-x: auto;
     width: 100%;
     max-width: 100%;
     margin-bottom: $spacer;
